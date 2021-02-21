@@ -1,0 +1,33 @@
+{
+  "name": "@nghiepuit/icons",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git"
+  },
+  "files": [
+    "images",
+    "components"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "clean": "rimraf components images",
+    "build": "NODE_ENV=production webpack --mode production",
+    "dev": "NODE_ENV=development webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "5.3.1",
+    "@types/react": "16.9.35",
+    "copy-webpack-plugin": "6.3.2",
+    "file-loader": "6.0.0",
+    "fs-extra": "9.0.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.2.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "dependencies": {
+    "webpack": "^5.9.0"
+  }
+}
